@@ -81,3 +81,10 @@ setTimeout(() => {
         showError('Model loading timed out. Please refresh the page.');
     }
 }, 30000);
+
+const modelViewer = document.querySelector('#model-viewer');
+
+// Set scale after model loads
+modelViewer.addEventListener('load', () => {
+    modelViewer.scale = '0.5 0.5 0.5';
+});
