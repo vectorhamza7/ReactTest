@@ -14,7 +14,7 @@
             border-radius: 30px;
             cursor: pointer;
             margin: 20px;
-            display: none; /* Hidden until AR is ready */
+            display: block; /* Hidden until AR is ready */
         }
 
         #ar-button[disabled] {
@@ -26,3 +26,4 @@
             width: 100%;
             height: 500px;
             background: #f0f0f0;
+        }
