@@ -6,22 +6,14 @@
     <title>AR Experience</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="loading-overlay">
-        <div class="spinner"></div>
-        <div class="loading-text">Loading 3D Model...</div>
-    </div>
 
-    <div id="instructions-overlay">
-        <strong>AR Mode Active</strong><br>
-        Tap to place • Pinch to scale • Drag to rotate
-    </div>
+    <h1>View in AR</h1>
 
-    <div id="error-message"></div>
-
+    <!-- AR Button -->
     <button id="ar-button">
-        <span class="ar-icon">📷</span>
-        Enter AR
+        📱 Launch AR
     </button>
 
     <model-viewer 
@@ -33,11 +25,12 @@
         camera-controls 
         touch-action="pan-y" 
         shadow-intensity="1" 
-        auto-rotate
         exposure="1"
         shadow-softness="1"
-        scale="0.1 0.1 0.1"> 
+        scale="0.5 0.5 0.5">
     </model-viewer>
+
+    
 
     <script type="module" src="main.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
