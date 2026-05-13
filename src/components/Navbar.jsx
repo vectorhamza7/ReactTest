@@ -72,8 +72,8 @@ export default function Navbar() {
 
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex  lg:justify-center flex-1">
-                    <div className="flex space-x-6 text-gray-700 hover:text-amber-900 ">
-                        <Link to="/" className=" transition-all duration-300 ease-in-out hover:text-2xl">
+                    <div id="heroText1" className="flex space-x-6 text-gray-700 hover:text-amber-900 ">
+                        <Link id="heroText1" to="/" className=" transition-all duration-300 ease-in-out hover:text-2xl">
                             Home
                         </Link>
                         <Link to="/about" className="hover:text-amber-600  transition-all duration-300 ease-in-out hover:text-2xl">
@@ -95,7 +95,7 @@ export default function Navbar() {
                 className="mt-4 pt-4 border-t border-amber-500 w-full rounded-b-4xl left-0 bg-gray-800 overflow-hidden"
                 style={{ height: 0, opacity: 0, display: "none" }}
             >
-                <div className="flex flex-col text-center text-xl space-y-5 mt-4 pb-8">
+                <div id="heroText1" className="flex flex-col text-center text-xl space-y-5 mt-4 pb-8">
                     {["Home", "About", "Services", "Contact"].map((item, index) => (
                         <Link
                             key={item}
