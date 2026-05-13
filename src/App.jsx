@@ -23,6 +23,7 @@ function App() {
       effects: true,          // enables data-speed / data-lag attributes
       normalizeScroll: true,  // normalizes scroll behavior across devices
       ignoreResize: false,
+      smoothTouch: true
     });
 
     return () => {
